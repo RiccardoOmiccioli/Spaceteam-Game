@@ -1,0 +1,247 @@
+.main-pane {
+    -fx-padding: 2em;
+
+    -fx-background-color: linear-gradient(from 0% 0% to 5% 100%, #524D49, #3F3C37);
+
+    -fx-font-size: 12px;
+}
+
+.glass-pane {
+    -fx-padding: 2em 2em 4em 2em;
+
+    -fx-background-color: linear-gradient(from 0% 0% to 5% 100%, #1A1A1A, #1A1A1A);
+    -fx-background-radius: 4em;
+}
+
+.glass-pane-normal {
+    -fx-pref-height: 30em;
+}
+
+.glass-pane-long {
+    -fx-pref-height: 60em;
+}
+
+.screen-pane {
+    -fx-padding: 2em;
+    -fx-background-color: linear-gradient(from 0% 0% to 5% 100%, #91A084, #9DAB8E);
+    -fx-background-radius: 2em;
+}
+
+.screen-text {
+    -fx-font-size: 2em;
+    -fx-font-family: "Graph 35+ pix";
+    -fx-text-fill: linear-gradient(from 0% 0% to 20% 100%, #424E37, #36402D);
+    -fx-effect: dropshadow(gaussian, #36402D, 3, 0.0, 1, 1);
+}
+
+.screen-text-field {
+    -fx-background-color: transparent;
+
+    -fx-font-size: 1.5em;
+    -fx-font-family: "Graph 35+ pix";
+    -fx-text-fill: linear-gradient(from 0% 0% to 20% 100%, #424E37, #36402D);
+    -fx-effect: dropshadow(gaussian, #36402D, 3, 0.0, 1, 1);
+
+    -fx-border-style: solid;
+    -fx-border-width: 0.2em;
+    -fx-border-color: linear-gradient(from 0% 0% to 20% 100%, #424E37, #36402D);
+}
+
+.screen-scroll-pane > .viewport, .screen-scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.screen-progress-bar {
+    -fx-pref-width: 37em;
+    -fx-pref-height: 2em;
+
+    -fx-background-color: transparent;
+    -fx-effect: dropshadow(gaussian, #36402D, 3, 0.0, 1, 1);
+
+    -fx-border-style: solid;
+    -fx-border-width: 0.4em;
+    -fx-border-color: linear-gradient(from 0% 0% to 20% 100%, #424E37, #36402D);
+}
+
+.screen-progress-bar > .track {
+    -fx-background-color: transparent;
+}
+
+.screen-progress-bar > .bar {
+    -fx-background-color: linear-gradient(from 0% 0% to 20% 100%, #424E37, #36402D);
+    -fx-background-radius: 0;
+    -fx-effect: dropshadow(gaussian, #36402D, 3, 0.0, 1, 1);
+}
+
+.screen-mark {
+    -fx-pref-height: 2em;
+    -fx-translate-y: 3em;
+
+    -fx-font-size: 2em;
+    -fx-font-family: "Share Tech Mono";
+    -fx-text-fill: linear-gradient(from 0% 0% to 10% 100%, #CCCCCC, #666666);
+}
+
+.control-panel {
+    -fx-padding: 2em 0 0 0;
+
+    -fx-effect: dropshadow(gaussian, #202020, 3, 0.0, 0, 0);
+}
+
+.control-cell {
+    -fx-pref-width: 15em;
+    -fx-pref-height: 15em;
+    -fx-padding: 2em 1em 1em 1em;
+
+    -fx-background-color: linear-gradient(from 0% 20% to 5% 100%, #4D4946, #393632);
+    -fx-background-radius: 0.3em;
+    -fx-effect: dropshadow(gaussian, #202020, 3, 0.0, 0, 0), innershadow(gaussian, #666666, 3, 0.0, 1, 1);
+
+    -fx-border-width: 0.1em;
+    -fx-border-radius: 0.3em;
+    -fx-border-style: solid;
+    -fx-border-color: #202020;
+}
+
+.control-surface {
+    -fx-alignment: top-center;
+    -fx-padding: 1em;
+
+    -fx-border-width: 0.1em;
+    -fx-border-radius: 1em;
+    -fx-border-style: solid;
+    -fx-border-color: #CFCCC9;
+}
+
+.control-label {
+    -fx-pref-height: 2em;
+    -fx-alignment: center;
+    -fx-translate-y: -1.75em;
+    -fx-padding: 0.5em 0.1em;
+
+    -fx-background-color: #4D4946;
+    -fx-background-radius: 0.3em;
+
+    -fx-font-size: 1.5em;
+    -fx-font-family: "Share Tech Mono";
+    -fx-text-fill: #CFCCC9;
+}
+
+.button-container {
+    -fx-translate-y: -1.3em;
+}
+
+.button-background {
+    -fx-pref-width: 15em;
+    -fx-min-height: 5em;
+
+    -fx-background-color: linear-gradient(from 0% 0% to 5% 100%, #353535, #272727);
+    -fx-background-radius: 1em;
+    -fx-background-insets: 0 0 -0.2em 0;
+    -fx-effect: dropshadow(gaussian, #1A1A1A, 6, 0.1, 1, 2);
+
+    -fx-border-width: 0.1em;
+    -fx-border-radius: 1em;
+    -fx-border-style: solid;
+    -fx-border-color: #202020;
+    -fx-border-insets: 0em -0.1em -0.3em -0.1em;
+}
+
+.button {
+    -fx-pref-width: 15em;
+    -fx-min-height: 5em;
+    -fx-translate-y: -0.3em;
+    -fx-padding: 0.5em 1em;
+
+    -fx-background-color: linear-gradient(from 0% 0% to 5% 100%, #54514D, #403C38);
+    -fx-background-radius: 1em;
+
+
+
+    -fx-border-width: 0em;
+    -fx-border-radius: 1em;
+    -fx-border-style: solid;
+    -fx-border-color: #202020;
+    -fx-border-insets: -0.1em;
+}
+
+
+.button-label-container {
+    -fx-alignment: center;
+}
+
+.button-label {
+    -fx-font-size: 1.5em;
+    -fx-font-family: "Share Tech Mono";
+    -fx-text-fill: #B7B3AE;
+    -fx-text-alignment: center;
+}
+
+.button:pressed .button-label, .button-label-selected {
+    -fx-text-fill: #55AA55;
+
+    -fx-effect: dropshadow(gaussian, #55AA55, 2, 0.1, 0, 0);
+}
+
+.button:pressed {
+    -fx-translate-y: -0.1em;
+
+    -fx-background-color: linear-gradient(from 0% 0% to 5% 100%, #404040, #202020);
+
+    -fx-text-fill: #55aa55;
+}
+
+.button:hover, .button:selected:hover {
+    -fx-background-color: linear-gradient(from 0% 0% to 5% 100%, #5D5A56, #4A4540);
+}
+
+.button:selected {
+    -fx-translate-y: -0.1em;
+}
+
+.snap-slider  {
+    -fx-translate-y: -1em;
+}
+
+.snap-slider:vertical .axis {
+    -fx-translate-x: 2em;
+}
+
+.snap-slider:horizontal .axis {
+    -fx-translate-y: 2em;
+}
+
+.snap-slider .track {
+    -fx-background-color: linear-gradient(to bottom, #202020, #1a1a1a);
+    -fx-background-radius: 0.5em;
+}
+
+.snap-slider .thumb {
+    -fx-pref-width: 4em;
+    -fx-pref-height: 4em;
+
+    -fx-background-color: linear-gradient(from 0% 0% to 5% 100%, #53504C, #3F3B37);
+    -fx-background-radius: 4em;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 5, 0.3, 1, 2);
+
+    -fx-border-width: 0.1em;
+    -fx-border-radius: 4em;
+    -fx-border-style: solid;
+    -fx-border-color: #202020;
+}
+
+.snap-slider .thumb:hover {
+    -fx-background-color: linear-gradient(from 0% 0% to 5% 100%, #5D5A56, #4A4540);
+}
+
+.snap-slider .axis .axis-tick-mark {
+    -fx-fill: null;
+    -fx-stroke-width: 0.2em;
+    -fx-stroke: #CFCCC9;
+}
+
+.snap-slider .axis {
+    -fx-tick-label-font-size: 1.2em;
+    -fx-font-family: "Share Tech Mono";
+    -fx-tick-label-fill: #CFCCC9;
+}

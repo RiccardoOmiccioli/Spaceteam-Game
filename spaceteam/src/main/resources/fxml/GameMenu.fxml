@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="TOP_CENTER" styleClass="main-pane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.unibo.spaceteam.view.GameView">
+   <children>
+      <StackPane>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <children>
+            <StackPane styleClass="screen-pane">
+               <children>
+                  <VBox>
+                     <children>
+                        <HBox alignment="CENTER">
+                           <children>
+                              <Label styleClass="screen-text" text="LEVEL:" />
+                              <Label fx:id="currentLevel" styleClass="screen-text" text="1" />
+                              <Pane HBox.hgrow="ALWAYS" />
+                              <Label fx:id="currentIntegrity" styleClass="screen-text" text="100" />
+                              <Label styleClass="screen-text" text="\%" />
+                           </children>
+                        </HBox>
+                        <VBox id="order-box" alignment="CENTER_LEFT" VBox.vgrow="ALWAYS">
+                           <children>
+                              <Label id="order-label" fx:id="currentOrder" ellipsisString="." styleClass="screen-text" text="&gt; WAIT LEVEL START" />
+                           </children>
+                        </VBox>
+                        <HBox alignment="CENTER">
+                           <children>
+                              <ProgressBar fx:id="timerProgress" progress="0.0" styleClass="screen-progress-bar" HBox.hgrow="ALWAYS" />
+                           </children>
+                        </HBox>
+                        <HBox id="lower-box" alignment="CENTER">
+                           <children>
+                              <Label fx:id="playersCount" styleClass="screen-text" text="1" />
+                              <Label styleClass="screen-text" text="P" />
+                              <Pane HBox.hgrow="ALWAYS" />
+                              <Label fx:id="completedOrder" styleClass="screen-text" text="1" />
+                              <Label styleClass="screen-text" text="/" />
+                              <Label fx:id="totalOrder" styleClass="screen-text" text="1" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <Label alignment="CENTER" contentDisplay="CENTER" styleClass="screen-mark" text="SPACETEAM" textAlignment="CENTER" StackPane.alignment="BOTTOM_CENTER" />
+               </children>
+            </StackPane>
+         </children>
+         <styleClass>
+            <String fx:value="glass-pane" />
+            <String fx:value="glass-pane-normal" />
+         </styleClass>
+      </StackPane>
+      <GridPane fx:id="controlsGrid" styleClass="control-panel">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" />
+            <ColumnConstraints hgrow="SOMETIMES" />
+            <ColumnConstraints hgrow="SOMETIMES" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints vgrow="SOMETIMES" />
+            <RowConstraints vgrow="SOMETIMES" />
+            <RowConstraints vgrow="SOMETIMES" />
+         </rowConstraints>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <children>
+            <StackPane styleClass="control-cell">
+               <children>
+                  <VBox styleClass="control-surface" />
+               </children>
+            </StackPane>
+            <StackPane styleClass="control-cell" GridPane.columnIndex="1">
+               <children>
+                  <VBox styleClass="control-surface" />
+               </children>
+            </StackPane>
+            <StackPane styleClass="control-cell" GridPane.columnIndex="2">
+               <children>
+                  <VBox styleClass="control-surface" />
+               </children>
+            </StackPane>
+            <StackPane styleClass="control-cell" GridPane.rowIndex="1">
+               <children>
+                  <VBox styleClass="control-surface" />
+               </children>
+            </StackPane>
+            <StackPane styleClass="control-cell" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <VBox styleClass="control-surface" />
+               </children>
+            </StackPane>
+            <StackPane styleClass="control-cell" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <children>
+                  <VBox styleClass="control-surface" />
+               </children></StackPane>
+            <StackPane styleClass="control-cell" GridPane.rowIndex="2">
+               <children>
+                  <VBox styleClass="control-surface" />
+               </children></StackPane>
+            <StackPane styleClass="control-cell" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <children>
+                  <VBox styleClass="control-surface" />
+               </children>
+            </StackPane>
+            <StackPane styleClass="control-cell" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <children>
+                  <VBox styleClass="control-surface" />
+               </children>
+            </StackPane>
+         </children>
+      </GridPane>
+   </children>
+   <stylesheets>
+      <URL value="@../css/style.css" />
+      <URL value="@../css/game-menu.css" />
+   </stylesheets>
+</VBox>

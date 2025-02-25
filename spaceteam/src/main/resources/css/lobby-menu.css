@@ -1,0 +1,7 @@
+#players-list {
+    -fx-pref-width: 33em;
+}
+
+#players-status-label {
+    -fx-padding: 0em 1em;
+}

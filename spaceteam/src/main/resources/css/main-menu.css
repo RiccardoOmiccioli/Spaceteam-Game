@@ -1,0 +1,9 @@
+#screen-title {
+    -fx-translate-y: -1em;
+
+    -fx-font-size: 4em;
+}
+
+#username-text-field {
+    -fx-translate-y: 3em;
+}

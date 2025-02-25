@@ -1,0 +1,177 @@
+[
+  {
+    "controlType": "PUSH_BUTTON",
+    "controlLabel": "HYPERDRIVE",
+    "controlValues": ["ACTIVATE"],
+    "controlWidth": 1,
+    "controlHeight": 1
+  },
+  {
+    "controlType": "PUSH_BUTTON",
+    "controlLabel": "FLUX",
+    "controlValues": ["RESET"],
+    "controlWidth": 1,
+    "controlHeight": 1
+  },
+  {
+    "controlType": "PUSH_BUTTON",
+    "controlLabel": "BEAM",
+    "controlValues": ["FIRE"],
+    "controlWidth": 1,
+    "controlHeight": 1
+  },
+  {
+    "controlType": "PUSH_BUTTON",
+    "controlLabel": "SHIELD",
+    "controlValues": ["DEPLOY"],
+    "controlWidth": 1,
+    "controlHeight": 1
+  },
+  {
+    "controlType": "PUSH_BUTTON",
+    "controlLabel": "GRAVITY",
+    "controlValues": ["ADJUST"],
+    "controlWidth": 1,
+    "controlHeight": 1
+  },
+  {
+    "controlType": "PUSH_BUTTON",
+    "controlLabel": "PLACE",
+    "controlValues": ["⟁"],
+    "controlWidth": 1,
+    "controlHeight": 1
+  },
+  {
+    "controlType": "TOGGLE_BUTTON",
+    "controlLabel": "STABILIZER",
+    "controlValues": ["ON", "OFF"],
+    "controlWidth": 1,
+    "controlHeight": 1
+  },
+  {
+    "controlType": "TOGGLE_BUTTON",
+    "controlLabel": "ENGINE",
+    "controlValues": ["ENGAGE", "DISENGAGE"],
+    "controlWidth": 1,
+    "controlHeight": 1
+  },
+  {
+    "controlType": "TOGGLE_BUTTON",
+    "controlLabel": "ASSEMBLER",
+    "controlValues": ["CREATE", "REPAIR"],
+    "controlWidth": 1,
+    "controlHeight": 1
+  },
+  {
+    "controlType": "TOGGLE_BUTTON",
+    "controlLabel": "STREAM",
+    "controlValues": ["ENCRYPT", "DECRYPT"],
+    "controlWidth": 1,
+    "controlHeight": 1
+  },
+  {
+    "controlType": "TOGGLE_BUTTON",
+    "controlLabel": "ANOMALY",
+    "controlValues": ["SCAN", "REPORT"],
+    "controlWidth": 1,
+    "controlHeight": 1
+  },
+  {
+    "controlType": "TOGGLE_BUTTON",
+    "controlLabel": "AIR CONDITIONING",
+    "controlValues": ["COOL", "HOT"],
+    "controlWidth": 2,
+    "controlHeight": 1
+  },
+  {
+    "controlType": "TOGGLE_BUTTON",
+    "controlLabel": "INTERCOM",
+    "controlValues": ["BROADCAST", "MUTE"],
+    "controlWidth": 2,
+    "controlHeight": 1
+  },
+  {
+    "controlType": "TOGGLE_BUTTON",
+    "controlLabel": "∀",
+    "controlValues": ["∏", "∑"],
+    "controlWidth": 1,
+    "controlHeight": 1
+  },
+  {
+    "controlType": "SLIDER",
+    "controlLabel": "ENGINE",
+    "controlValues": ["IDLE", "CRUISE", "BOOST"],
+    "controlWidth": 1,
+    "controlHeight": 2
+  },
+  {
+    "controlType": "SLIDER",
+    "controlLabel": "BRIGHTNESS",
+    "controlValues": ["1", "2", "3", "4", "5"],
+    "controlWidth": 1,
+    "controlHeight": 2
+  },
+  {
+    "controlType": "SLIDER",
+    "controlLabel": "SHAPE",
+    "controlValues": ["△", "⬠", "○", "□", "⬡"],
+    "controlWidth": 1,
+    "controlHeight": 2
+  },
+  {
+    "controlType": "SLIDER",
+    "controlLabel": "GRAVITY",
+    "controlValues": ["OFF", "NORMAL", "EXTREME"],
+    "controlWidth": 2,
+    "controlHeight": 1
+  },
+  {
+    "controlType": "SLIDER",
+    "controlLabel": "COOLING SYSTEM",
+    "controlValues": ["OFF", "STANDARD", "MAX"],
+    "controlWidth": 2,
+    "controlHeight": 1
+  },
+  {
+    "controlType": "SLIDER",
+    "controlLabel": "RAYS",
+    "controlValues": ["α", "β", "γ"],
+    "controlWidth": 2,
+    "controlHeight": 1
+  },
+  {
+    "controlType": "SLIDER",
+    "controlLabel": "Pi",
+    "controlValues": ["3.14", "π", "~3"],
+    "controlWidth": 2,
+    "controlHeight": 1
+  },
+  {
+    "controlType": "SLIDER",
+    "controlLabel": "⭮",
+    "controlValues": ["⭡", "⭢", "⭣","⭠"],
+    "controlWidth": 2,
+    "controlHeight": 1
+  },
+  {
+    "controlType": "SLIDER",
+    "controlLabel": "DECIMAL DIGIT",
+    "controlValues": ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"],
+    "controlWidth": 3,
+    "controlHeight": 1
+  },
+  {
+    "controlType": "SLIDER",
+    "controlLabel": "失う",
+    "controlValues": ["ゲーム", "ミニゲーム", "全て"],
+    "controlWidth": 3,
+    "controlHeight": 1
+  },
+  {
+    "controlType": "SLIDER",
+    "controlLabel": "TRANSLATE",
+    "controlValues": ["⩙", "⩕", "⩚", "⩖","⩛"],
+    "controlWidth": 3,
+    "controlHeight": 1
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "control-type": "PUSH_BUTTON",
+  "control-label": "HYPERDRIVE",
+  "control-values": ["ACTIVATE"],
+  "control-width": 1,
+  "control-height": 1
+}

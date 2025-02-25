@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  emqx:
+    image: emqx/emqx:5.8.0
+    container_name: emqx
+    restart: always
+    ports:
+      - "1883:1883"   # MQTT TCP port
+      - "8083:8083"   # MQTT WebSocket port
+      - "8084:8084"   # MQTT WebSocket Secure (SSL) port
+      - "8883:8883"   # MQTT Secure (SSL) port
+      - "18083:18083" # EMQX Dashboard
+    environment:
+      EMQX_DASHBOARD__DEFAULT_PASSWORD: "${EMQX_DASHBOARD_PASSWORD:-password}"

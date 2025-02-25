@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="TOP_CENTER" styleClass="main-pane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.unibo.spaceteam.view.LobbyView">
+   <children>
+      <StackPane>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <children>
+            <StackPane alignment="TOP_LEFT" styleClass="screen-pane">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" styleClass="screen-mark" text="SPACETEAM" textAlignment="CENTER" StackPane.alignment="BOTTOM_CENTER" />
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label styleClass="screen-text" text="LOBBY:" />
+                        <TextField fx:id="lobbyId" onAction="#lobbyIdInput" styleClass="screen-text-field" />
+                        <ScrollPane hbarPolicy="NEVER" pannable="true" styleClass="screen-scroll-pane" vbarPolicy="NEVER" VBox.vgrow="ALWAYS">
+                           <content>
+                              <VBox id="players-list" fx:id="playersList" />
+                           </content></ScrollPane>
+                        <HBox alignment="CENTER_LEFT">
+                           <children>
+                              <Label styleClass="screen-text" text="PLAYERS:" />
+                              <Label id="players-status-label" fx:id="playersCount" styleClass="screen-text" text="0/0" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </StackPane>
+         </children>
+         <styleClass>
+            <String fx:value="glass-pane" />
+            <String fx:value="glass-pane-long" />
+         </styleClass>
+      </StackPane>
+      <GridPane fx:id="controlsGrid" styleClass="control-panel">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" />
+            <ColumnConstraints hgrow="SOMETIMES" />
+            <ColumnConstraints hgrow="SOMETIMES" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints vgrow="SOMETIMES" />
+         </rowConstraints>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <children>
+            <StackPane styleClass="control-cell">
+               <children>
+                  <VBox styleClass="control-surface">
+                     <children>
+                        <Label alignment="TOP_CENTER" contentDisplay="CENTER" styleClass="control-label" text="MAIN MENU" />
+                        <StackPane styleClass="button-container">
+                           <children>
+                              <Pane styleClass="button-background" />
+                              <Button ellipsisString="." mnemonicParsing="false" onMouseClicked="#backButtonClick">
+                                 <graphic>
+                                    <VBox alignment="CENTER" styleClass="button-label-container">
+                                       <children>
+                                          <Label ellipsisString="." styleClass="button-label" text="GO BACK" />
+                                       </children>
+                                    </VBox>
+                                 </graphic>
+                              </Button>
+                           </children>
+                        </StackPane>
+                     </children>
+                  </VBox>
+               </children></StackPane>
+            <StackPane styleClass="control-cell" GridPane.columnIndex="1">
+               <children>
+                  <VBox styleClass="control-surface">
+                     <children>
+                        <Label alignment="TOP_CENTER" contentDisplay="CENTER" styleClass="control-label" text="ROLE" />
+                        <StackPane styleClass="button-container">
+                           <children>
+                              <Pane styleClass="button-background" />
+                              <Button ellipsisString="." mnemonicParsing="false" onMouseClicked="#roleButtonClick">
+                                 <graphic>
+                                    <VBox alignment="CENTER" styleClass="button-label-container">
+                                       <children>
+                                          <Label ellipsisString="." styleClass="button-label" text="CHANGE" />
+                                       </children>
+                                    </VBox>
+                                 </graphic>
+                              </Button>
+                           </children>
+                        </StackPane>
+                     </children>
+                  </VBox>
+               </children>
+            </StackPane>
+            <StackPane styleClass="control-cell" GridPane.columnIndex="2">
+               <children>
+                  <VBox styleClass="control-surface">
+                     <children>
+                        <Label alignment="TOP_CENTER" contentDisplay="CENTER" styleClass="control-label" text="STATUS" />
+                        <StackPane styleClass="button-container">
+                           <children>
+                              <Pane styleClass="button-background" />
+                              <Button ellipsisString="." mnemonicParsing="false" onMouseClicked="#readyButtonClick">
+                                 <graphic>
+                                    <VBox alignment="CENTER" styleClass="button-label-container">
+                                       <children>
+                                          <Label ellipsisString="." styleClass="button-label" text="READY" />
+                                       </children>
+                                    </VBox>
+                                 </graphic>
+                              </Button>
+                           </children>
+                        </StackPane>
+                     </children>
+                  </VBox>
+               </children>
+            </StackPane>
+         </children>
+      </GridPane>
+   </children>
+   <stylesheets>
+      <URL value="@../css/style.css" />
+      <URL value="@../css/lobby-menu.css" />
+   </stylesheets>
+</VBox>
